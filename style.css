@@ -1,0 +1,262 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    background-color: black;
+    margin: 0px;
+}
+#main{
+    margin-left:120px;  
+    margin-top: 60px;
+    position: relative;
+ }
+ .a{
+    font-size: 2.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px rgba(233, 152, 22, 0.76);
+ }
+ .a1{
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px rgba(233, 152, 22, 0.76);
+ }
+ .sp{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 2.8rem;
+ }
+ .b1{
+   font-family: 'Quicksand', sans-serif;
+   color: rgb(220, 210, 210) ;
+   font-size: 2.5rem;
+   position: absolute;
+   left: 69vw; 
+    top: -40px;
+    text-shadow: 3px 3px 3px rgba(233, 152, 22, 0.76);
+   font-weight: 500;
+ } 
+ .plusmain{
+    position: absolute;
+    left:65vw;
+    top: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(86, 108, 250); 
+ }
+ .plusmain:hover{
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+
+ }
+.box{
+    border: 1px solid rgb(245, 55, 55) ;
+    height:25vw ;
+    width: 17vw;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgb(205, 198, 198);
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+.newtext{
+  margin-top: 50px;
+}
+.Add{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: orangered;
+  margin-top: 50px;
+  text-shadow: 1px 1px 2px rgba(53, 46, 33, 0.685);
+}
+.inputText1{
+  height: 40px;
+  width: 22vw;
+  margin-top: 20px;
+  border: 2px solid rgb(234, 50, 50);
+  border-radius: 5px;
+ box-shadow: 1.2px 1.2px 2px;
+  text-align: center;
+}
+.addbutton{ 
+  background-color: #fc8217;
+   border: none;
+   color: white;
+   text-align: center;
+   border-radius: 1.8vw;
+   box-shadow: 5px 5px 8px rgba(57, 50, 44, 0.71);
+   text-shadow: 0px 0px 1px;
+   display: inline-block;
+   font-size: 1.8rem;
+   width: 100px;
+   cursor: pointer;
+   padding: 5px;
+   margin-top: 20px;
+}
+.addbutton:hover{
+  background-color: rgba(38, 217, 38, 0.961);
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+.closebutton{ 
+    background-color: #fc8217;
+     border: none;
+     color: white;
+     text-align: center;
+     border-radius: 1.8vw;
+     box-shadow: 5px 5px 8px rgba(57, 50, 44, 0.71);
+     text-shadow: opx 0px 1px;
+     display: inline-block;
+     font-size: 1.8rem;
+     width: 100px;
+     cursor: pointer;
+     margin-left: 20px;
+     margin-top: 20px;
+     padding: 5px;
+  }
+  .closebutton:hover{
+    background-color: rgb(245, 26, 26);
+    transform: scale(1.1);
+    transition: all 0.1s linear;
+  }
+.popupShow{
+    width: 450px;
+    height: 250px;
+    border: 1.5px solid rgb(255, 157, 0);
+    border-radius: 1vw;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    box-shadow: 2px 2px 4px orange;
+    left: 36vw;
+    top: 30%;
+    text-align: center;
+ }
+ .plus{
+   float: right;
+   color: rgb(37, 220, 37);
+   font-size: 35px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 230px;
+   cursor: pointer;
+ }
+ .plus:hover{
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+ }
+ 
+ .delete{
+   color: red;
+   font-size: 35px;
+   float: right;
+   margin-top: 230px;
+   cursor: pointer;
+ }
+ .delete:hover{
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+ }
+ .boxstyle{
+   border: 1px solid rgb(245, 55, 55) ;
+    height:25vw ;
+    width: 17vw;
+    /* margin: 30px; */
+    margin-top: 80px ;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 8px rgb(205, 198, 198);
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+ }
+ #parent{
+   display: flex;
+   justify-content: space-between; 
+   flex-wrap: wrap;
+   padding: 0px 80px 20px 80px;
+   }
+.h3{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* //-------------------- */
+
+.list{
+ list-style: none;
+ padding-left: 0px;
+ font-size: 1.5rem;
+ margin: 10px;
+ color: rgba(0, 0, 0, 0.941)
+}
+
+.bt3{
+   width: 80px;
+  height: 30px;
+  /* padding: 5px; */
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 30px;
+  background-color: rgba(37, 220, 37, 0.989);
+  text-shadow: 0px 0px 1.2px;
+  color: white;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(254, 152, 19, 0.591);
+  left: 80px;
+  top: -30px;
+}
+.headtext{
+  font-family: 'Heebo', sans-serif;
+  color:rgba(139, 10, 149, 0.758) ;
+  text-shadow: 0.4px 0.4px 0.8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.headtext:hover{
+  color: rgba(241, 30, 136, 0.845);
+}
+/* ///////-------------/////////// */
+.textback{
+  font-size: 40px;
+  color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+  margin-left:10px;
+  /* margin-top: 5px; */
+}
+.heading1{
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: 10% ;
+  text-shadow: 2px 2px 8px rgba(233, 152, 22, 0.76);
+}
+
+.backicon{
+  position: absolute;
+    font-size: 35px;
+    left: -450px;
+    color: #fffcfa;
+   cursor: pointer;
+    box-sizing: border-box;
+}
+.backicon:hover{
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+#secondpage{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 40%;
+  top:60px;
+  align-items: center;
+  visibility: hidden;
+}
