@@ -7,7 +7,6 @@ var secondPage = document.querySelector('#secondpage');
 
 //// main function for all the roots
 plus.addEventListener('click', function () {
-  secondPage.style.filter = "blur(15px)";
   ///////creating popup@1//------------------
   const popupShow = document.createElement('div');
   popupShow.className = "popupShow"
@@ -32,8 +31,8 @@ plus.addEventListener('click', function () {
   const closeButton = document.createElement('button');
   closeButton.className = "closebutton";
   closeButton.innerText = "Close";
-   //--------  close button1 function//----------
-  closeButton.addEventListener('click', function(){
+  //--------  close button1  delete popup//----------
+  closeButton.addEventListener('click', function () {
     popupShow.style.visibility = "hidden";
     mainblur.style.filter = "blur(0px)";
   })
@@ -48,11 +47,11 @@ plus.addEventListener('click', function () {
   popupShow.appendChild(closeButton);
 
   console.log(popupOne);
- 
+
   popupShow.style.visibility = "visible";
   mainblur.style.filter = "blur(15px)";
 
-  ///----Add button@1 function-------//
+  ///----Add button@1 adiing Items function-------//
 
   addButton.addEventListener('click', function () {
     const taskOne = document.createElement('div');
@@ -77,27 +76,21 @@ plus.addEventListener('click', function () {
     //-----input value shows the tripvalue--------------
     tripValue.innerText = inputText1.value;
 
-    secondPage.style.opacity = "hidden";
-    flexContainer.style.visibility = "visible";
-    mainblur.style.visibility = "visible";
-
     mainblur.style.filter = "blur(0px)";
     const a1 = document.querySelector('.a1');
     a1.style.visibility = "hidden";
     popupShow.style.display = "none";
-    //Delete button remove child @taskone
+    //Delete button remove the whole card//
     trashButton.addEventListener('click', function () {
       taskOne.remove();
       mainblur.style.visibility = "visible";
       secondPage.style.visibility = "hidden";
     })
-   
-    
+
     /////////// @2nd - page function////////////////////////
 
     tripValue.addEventListener("click", function () {
       taskOne.querySelector("#tripBox");
-      plus.style.visibility = "visible";
       const heading1 = document.querySelector('.heading1')
       heading1.innerText = inputText1.value;
 
@@ -127,7 +120,7 @@ plus.addEventListener('click', function () {
       secondPage.style.filter = "blur(15px)";
 
       mainblur.classList.add('mainblur');
-           //creating popup@2//-------------
+      //-------creating popup@2-------------//
       const popupShow1 = document.createElement('div');
       popupShow1.className = "popupShow"
       const newTest1 = document.createElement('div');
@@ -152,7 +145,7 @@ plus.addEventListener('click', function () {
       closeButton1.className = "closebutton";
       closeButton1.innerText = "Close";
 
-      closeButton1.addEventListener('click', function(){
+      closeButton1.addEventListener('click', function () {
         popupShow1.style.visibility = "hidden";
         mainblur.style.filter = "blur(0px)";
       })
@@ -168,7 +161,7 @@ plus.addEventListener('click', function () {
 
       console.log(popupOne);
 
-      ///////Add Button@2 function///////
+      ///////Add Button@2  addings items list function///////
 
       addButton1.addEventListener('click', function () {
 
@@ -182,7 +175,7 @@ plus.addEventListener('click', function () {
         const markDone = document.createElement('button');
         markDone.className = "bt3";
         markDone.innerText = "Mark Done";
-       ///////appending taskone to list/////
+        ///////appending taskone to list/////
         taskOne.appendChild(list);
         list.appendChild(li);
         list.appendChild(markDone);
@@ -196,7 +189,6 @@ plus.addEventListener('click', function () {
           list.removeChild(markDone);
         })
       })
-
     })
   })
 });
