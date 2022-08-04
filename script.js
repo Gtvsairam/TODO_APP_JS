@@ -50,6 +50,7 @@ plus.addEventListener('click', function () {
 
   popupShow.style.visibility = "visible";
   mainblur.style.filter = "blur(15px)";
+  secondPage.style.filter = "blur(15px)";
 
   ///----Add button@1 adiing Items function-------//
 
@@ -86,11 +87,14 @@ plus.addEventListener('click', function () {
       mainblur.style.visibility = "visible";
       secondPage.style.visibility = "hidden";
     })
+    
+    secondPage.style.filter = "blur(0px)";
 
     /////////// @2nd - page function////////////////////////
 
     tripValue.addEventListener("click", function () {
       taskOne.querySelector("#tripBox");
+      plus.style.visibility = "visible";
       const heading1 = document.querySelector('.heading1')
       heading1.innerText = inputText1.value;
 
@@ -104,13 +108,20 @@ plus.addEventListener('click', function () {
       secondPage.appendChild(taskOne);
       ////////-----Back Icon function----------------/////
       backIcon.addEventListener('click', function () {
-        secondPage.style.filter = "blur(15px)";
-        taskOne.remove();
+        // secondPage.style.filter = "blur(15px)";
         flexContainer.appendChild(taskOne);
         mainblur.style.visibility = "visible";
         flexContainer.style.visibility = "visible";
         secondPage.style.visibility = "hidden";
       });
+      trashButton.addEventListener('click', function(){
+        flexContainer.appendChild(taskOne);
+        taskOne.remove();
+        mainblur.style.visibility = "visible";
+        flexContainer.style.visibility = "visible";
+        secondPage.style.visibility = "hidden";
+      })
+      
       //-----------------------------------------------
     });
     //////////// PlusButton Function////////////
